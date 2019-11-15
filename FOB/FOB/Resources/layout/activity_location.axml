@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:clickable="true"
+	android:background="#ffbdbdbd">
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/top_headerLocation"
+		android:background="#FFBDBDBD"
+		android:descendantFocusability="beforeDescendants"
+		android:focusableInTouchMode="true"
+		android:layout_alignParentTop="true"
+		android:fadeScrollbars="true">
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+            <TextView
+                android:text="استان فارس"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:id="@+id/location_TxtView_Header"
+                android:gravity="center"
+                android:textSize="25dp"
+                android:layout_marginRight="4dp"
+				  />
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_alignParentBottom="true"
+		android:background="@null"
+		android:layout_marginTop="15dp"
+		android:id="@+id/bottom_menuuLocation"
+		android:layout_height="wrap_content">
+        <Button
+            android:text="تعیین موقعیت"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorgreen"
+            android:id="@+id/location_Button_SetLocation"
+            android:textColor="@color/colorWhite"
+            android:layout_weight="1"
+            android:textSize="19dp"
+            android:paddingTop="7dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp" />
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/top_headerLocation"
+		android:layout_above="@id/bottom_menuuLocation"
+		android:id="@+id/sub_content_viewLocation"
+		android:orientation="vertical">
+		<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+   android:id="@+id/Locatin_Fragment_map"
+	android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	class="com.google.android.gms.maps.MapFragment"
+	>
+</fragment>
+	</LinearLayout>
+     
+</RelativeLayout>

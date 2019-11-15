@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:clickable="true"
+	android:background="#e0e0e0">
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/top_headerSelectedDescriptionResturant"
+		android:background="#e0e0e0"
+		android:descendantFocusability="beforeDescendants"
+		android:focusableInTouchMode="true"
+		android:layout_alignParentTop="true"
+		android:fadeScrollbars="true">
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:minWidth="25px"
+			android:minHeight="25px">
+			<Button
+			android:text="رستوران بهاران"
+				android:textColor="@color/colorBlack"
+			android:layout_marginLeft="15dp"
+				android:layout_marginTop="2dp"
+				android:layout_marginRight="15dp"
+				android:background="@color/colorBlue"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/SelectedDescriptionResturant_Button_NameResturant" />
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_alignParentBottom="true"
+		android:background="#ffbdbdbd"
+		android:id="@+id/bottom_menuuSelectedDescriptionResturant"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+		 >
+		<LinearLayout
+			android:orientation="vertical"
+			android:minWidth="25px"
+			android:minHeight="25px"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			 >
+			<LinearLayout 
+				android:orientation="horizontal"
+				android:minWidth="25px"
+				android:minHeight="25px"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+			 android:gravity="center"
+				android:background="#e0e0e0"
+			 
+				>
+				<TextView
+					android:text="ریال"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:id="@+id/SelectedDescriptionResturant_TextView_UnitRiyal"
+					android:textSize="25dp" />
+				<TextView
+					android:text="1500"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:id="@+id/SelectedDescriptionResturant_Button_Count"
+					android:gravity="center"
+					android:textSize="25dp"
+					android:layout_marginLeft="8dp"
+					android:layout_marginRight="3dp" />
+				<TextView
+					android:text="جمع کل"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:id="@+id/SelectedDescriptionResturant_Button_AllPrice"
+					android:gravity="right"
+					android:textSize="25dp"
+				  />
+			</LinearLayout >
+			<Button
+				android:text="رفتن به سبد فوب"
+				android:textColor="@color/colorBlack"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@color/colorBlue"
+				android:layout_marginBottom="3dp"
+				android:id="@+id/SelectedDescriptionResturant_Button_Back" />
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="right"
+		android:layout_below="@id/top_headerSelectedDescriptionResturant"
+		android:layout_above="@id/bottom_menuuSelectedDescriptionResturant"
+		android:id="@+id/sub_content_viewSelectedDescriptionResturant"
+		android:orientation="vertical"
+		android:minWidth="25px"
+		android:minHeight="25px">
+		<HorizontalScrollView android:layout_width="match_parent"
+			 
+			android:layout_height="wrap_content">
+			
+		<LinearLayout
+			android:orientation="horizontal"
+			android:gravity="center"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			 >
+				<Button
+					android:text="دسر"
+					android:background="@color/colorBlue"
+					android:gravity="center"
+					android:layout_marginTop="3dp"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:id="@+id/SelectedDescriptionResturant_Button_Deser"
+					android:layout_marginLeft="55dp" />
+			<Button
+				android:text="غذا"
+				android:gravity="center"
+				android:background="@color/colorBlue"
+			android:layout_marginLeft="3dp"
+				android:layout_marginTop="3dp"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:id="@+id/SelectedDescriptionResturant_Button_Lunch" />
+				<Button
+					android:text="نوشیدنی"
+					android:gravity="center"
+					android:background="@color/colorBlue"
+					android:layout_marginLeft="3dp"
+					android:layout_marginTop="3dp"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:id="@+id/SelectedDescriptionResturant_Button_Drink"
+					android:layout_marginRight="55dp" />
+			
+		</LinearLayout>
+			</HorizontalScrollView>
+	
+		<ListView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/SelectedDescriptionResturant_ListView_ItemResturant" />
+	</LinearLayout>
+     
+</RelativeLayout>

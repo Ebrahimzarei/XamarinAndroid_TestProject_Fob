@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:clickable="true"
+	android:background="#ffbdbdbd">
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/top_headerAddAccount"
+		android:background="#ffbdbdbd"
+		android:descendantFocusability="beforeDescendants"
+		android:focusableInTouchMode="true"
+		android:layout_alignParentTop="true"
+		android:fadeScrollbars="true">
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+			<TextView
+				android:text="ویرایش اطلاعات"
+				android:layout_marginTop="15dp"
+				android:background="@mipmap/edit_textview"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				
+				android:id="@+id/AddAccount_TxtView_Header"
+				android:gravity="right"
+				android:textSize="18dp"
+				android:textColor="@color/colorBlack"
+				android:layout_marginRight="4dp"
+				android:layout_marginLeft="10dp" 
+				
+				  />
+		
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout
+		android:orientation="horizontal"
+		
+		android:layout_width="match_parent"
+		android:layout_alignParentBottom="true"
+		android:background="#ffbdbdbd"
+		android:id="@+id/bottom_menuuAddAccount"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+		 >
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_alignParentBottom="true"
+			android:background="@color/colorBlue"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="1dp"
+			android:layout_marginRight="1dp"
+			android:layout_marginBottom="5dp">
+			<Button
+				android:text="حساب"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				
+				android:background="@color/colorBlue"
+				android:id="@+id/AddAccount_Button_Account"
+				android:textColor="@color/colorBlack"
+				android:drawableTop="@mipmap/home32"
+				android:layout_weight="1"
+				android:textSize="17dp"
+				android:paddingTop="7dp"
+				android:layout_marginLeft="7dp"
+				android:layout_marginTop="5dp" />
+			<Button
+				android:text="پیام"
+				android:layout_width="wrap_content"
+				android:background="@color/colorBlue"
+				android:layout_height="match_parent"
+				android:textColor="@color/colorBlack"
+				android:drawableTop="@mipmap/order"
+				android:layout_weight="1"
+				android:paddingTop="7dp"
+				android:textSize="17dp"
+				android:id="@+id/AddAccount_Button_Message"
+				android:layout_marginTop="5dp" />
+			<ImageButton
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:background="@color/colorkhaki"
+				android:visibility="gone"
+				android:textColor="@color/colorBlack"
+				android:src="@mipmap/menu"
+		  />
+			<Button
+				android:text="سبد"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:drawableTop="@mipmap/promos24"
+				android:background="@color/colorBlue"
+				android:layout_weight="1"
+				android:textColor="@color/colorBlack"
+				android:paddingTop="7dp"
+				android:textSize="17dp"
+				android:id="@+id/AddAccount_Button_Basket"
+				android:layout_marginTop="5dp" />
+			<Button
+				android:text="خانه"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:background="@color/colorBlue"
+				android:layout_weight="1"
+				android:textSize="17dp"
+				android:paddingTop="7dp"
+				android:drawableTop="@mipmap/accound"
+				android:textColor="@color/colorBlack"
+				android:id="@+id/AddAccount_Button_Home"
+				android:layout_marginRight="7dp"
+				android:layout_marginTop="5dp" />
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/top_headerAddAccount"
+		android:layout_above="@id/bottom_menuuAddAccount"
+		android:id="@+id/sub_content_viewAddAccount"
+		android:orientation="vertical">
+		 <ScrollView
+			android:orientation="vertical"
+		 
+			android:minWidth="25px"
+			android:minHeight="25px"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			>
+				<LinearLayout
+			android:orientation="vertical"
+		 
+			android:minWidth="25px"
+			android:minHeight="25px"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+		  >
+		 <TextView
+			android:text="نام "
+			android:layout_width="match_parent"
+		    android:textColor="@color/colorBlack"
+					android:textSize="14dp"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+			android:gravity="right"
+			android:layout_marginTop="5dp"
+			android:layout_height="wrap_content"
+			android:id="@+id/AddAccount_TextView_FullName" />
+		<EditText
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5dp"
+					 android:textColor="@color/colorBlack"
+					android:textSize="14dp"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+			android:gravity="right"
+			android:hint="نام "
+			android:inputType="text"
+			android:background="@mipmap/edittext_bg"
+			android:id="@+id/AddAccount_EditText_FullName" />
+
+			<TextView
+			android:text="نام خانوادگی "
+			android:layout_width="match_parent"
+			android:gravity="right"
+			android:layout_marginTop="8dp"
+					 android:textColor="@color/colorBlack"
+					android:textSize="14dp"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+			android:layout_height="wrap_content"
+			android:id="@+id/AddAccount_TextView_FamilyName" />
+		<EditText
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5dp"
+					 android:textColor="@color/colorBlack"
+					android:textSize="14dp"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+			android:gravity="right"
+			android:hint="نام خانوادگی "
+			android:inputType="text"
+			android:background="@mipmap/edittext_bg"
+			android:id="@+id/AddAccount_EditText_FamilyName" />
+
+			<TextView
+			android:text="شماره تلفن ثابت"
+			android:layout_width="match_parent"
+			android:gravity="right"
+			android:layout_marginTop="8dp"
+					 android:textColor="@color/colorBlack"
+					android:textSize="14dp"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+			android:layout_height="wrap_content"
+			android:id="@+id/AddAccount_TextView_Tel" />
+		<EditText android:gravity="right"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5dp"
+					 android:textColor="@color/colorBlack"
+					android:textSize="14dp"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+			android:inputType="number"
+			android:background="@mipmap/edittext_bg"
+			android:hint="شماره تلفن ثابت"
+			android:id="@+id/AddAccount_EditText_Tel" />
+
+				<TextView
+			android:text="شماره تلفن همراه"
+			android:layout_width="match_parent"
+			android:gravity="right"
+			android:layout_marginTop="8dp"
+					 android:textColor="@color/colorBlack"
+					android:textSize="14dp"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+			android:layout_height="wrap_content"
+			android:id="@+id/AddAccount_TextView_Telhamrah" />
+		<EditText android:gravity="right"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5dp"
+					 android:textColor="@color/colorBlack"
+					android:textSize="14dp"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+			android:inputType="number"
+			android:background="@mipmap/edittext_bg"
+			android:hint="شماره تلفن همراه"
+			android:id="@+id/AddAccount_EditText_Telhamrah" />
+
+		<TextView
+			android:text="کد ملی"
+			android:layout_width="match_parent"
+			android:gravity="right"
+			android:layout_marginTop="5dp"
+					 android:textColor="@color/colorBlack"
+					android:textSize="14dp"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+			android:layout_height="wrap_content"
+			android:id="@+id/AddAccount_TextView_NationalCode" />
+		<EditText android:gravity="right"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5dp"
+					 android:textColor="@color/colorBlack"
+					android:textSize="14dp"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+			android:inputType="number"
+			android:background="@mipmap/edittext_bg"
+			android:hint="کد ملی"
+			android:id="@+id/AddAccount_EditText_NationalCode" />
+		<TextView
+			android:text="تاریخ تولد"
+			android:layout_width="match_parent"
+					 android:textColor="@color/colorBlack"
+			android:gravity="right"
+			android:layout_marginTop="8dp"
+						android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+			android:layout_height="wrap_content"
+			android:id="@+id/AddAccount_TextView_BirthDay" />
+		<EditText android:gravity="right"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5dp"
+					 android:textColor="@color/colorBlack"
+					android:textSize="14dp"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+			android:inputType="number"
+			android:background="@mipmap/edittext_bg"
+			android:hint="تاریخ تولد"
+			android:id="@+id/AddAccount_EditText_BirthDay" />
+
+
+
+			<TextView android:gravity="right"
+			android:text="محل سکونت"
+			android:layout_width="match_parent"
+			android:layout_marginTop="8dp"
+					 android:textColor="@color/colorBlack"
+					android:textSize="14dp"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+			android:layout_height="wrap_content"
+			android:id="@+id/AddAccount_TextView_Adress" />
+		<EditText android:gravity="right"
+			android:layout_width="match_parent"
+			android:layout_marginTop="5dp"
+					 android:textColor="@color/colorBlack"
+					android:textSize="14dp"
+					android:layout_marginLeft="8dp"
+					android:layout_marginRight="8dp"
+			android:hint="محل سکونت"
+			android:inputType="textMultiLine"
+			android:layout_height="wrap_content"
+			android:background="@mipmap/edittext_bg"
+			android:id="@+id/AddAccount_EditText_Address" />
+		<LinearLayout
+			android:orientation="horizontal"
+			android:minWidth="25px"
+			android:minHeight="25px"
+			android:weightSum="3"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			  >
+			<CheckBox
+				android:text="مرد"
+						 android:textColor="@color/colorBlack"
+					android:textSize="14dp"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+				android:layout_width="wrap_content"
+				android:layout_weight="1"
+				android:layout_height="match_parent"
+				 
+				android:id="@+id/AddAccount_CheckBox_Male" />
+			<CheckBox
+				android:text="زن"
+				android:layout_weight="1"
+							 android:textColor="@color/colorBlack"
+					android:textSize="14dp"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				 
+				android:id="@+id/AddAcount_checkBox_Female" />
+			<TextView
+				
+				android:text="جنسیت :"
+							 android:textColor="@color/colorBlack"
+					android:textSize="14dp"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+						
+				android:layout_weight="1"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				/>
+		</LinearLayout>
+			 
+		<Button 
+			android:text="ذخیره"
+			android:gravity="center"
+			 android:textSize="30dp"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="#ff77a2ec"
+			android:layout_marginTop="7dp"
+			android:drawableLeft="@mipmap/tick24"
+			android:paddingLeft="15dp"
+			android:layout_marginLeft="18dp"
+			android:layout_marginRight="18dp"
+					android:textColor="@color/colorBlack"
+			android:id="@+id/AddAccount_Button_Save" />
+		</LinearLayout>
+			</ScrollView>
+	
+		
+	</LinearLayout>
+     
+</RelativeLayout>

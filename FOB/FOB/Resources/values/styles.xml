@@ -1,0 +1,51 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+  <style name="Theme.Custom" parent="Theme.AppCompat.CompactMenu">
+    <item name="android:colorBackground">#ffef5350</item>
+    <item name="android:windowBackground">?android:attr/colorBackground</item>
+    <item name="android:colorPrimary">#ffe57373</item>
+    <item name="android:colorPrimaryDark">#fff44336</item>
+    <item name="android:colorAccent">#ffe53935</item>
+    <item name="android:textColorPrimary">#fff44336</item>
+    <item name="android:textColorSecondary">#ffe53935</item>
+    <item name="android:colorButtonNormal">#ffef5350</item>
+  </style>
+
+  <style name="stylerating" parent="Widget.AppCompat.RatingBar.Small">
+    <item name="colorControlNormal">#85ed23</item>
+   
+    <item name="colorControlActivated">#ede623</item>
+  </style>
+
+  <style name="CustomRatingBar" parent="Theme.AppCompat">
+    <item name="colorControlNormal">#80CBC4</item>
+    <item name="colorControlActivated">#009688</item>
+  </style>
+
+  <style name="CustomHeartsRatingBar" parent="@android:style/Widget.RatingBar">
+    
+    <item name="android:minHeight">3dip</item>
+    <item name="android:maxHeight">3dip</item>
+    <item name="android:maxWidth">3dip</item>
+    <item name="android:minWidth">3dip</item>
+    <item name="colorControlNormal">#80CBC4</item>
+    <item name="colorControlActivated">#96ff16</item>
+  </style>
+
+  <style name="FoursquareReviewRating" parent="Widget.AppCompat.RatingBar.Small">
+    <item name="colorControlNormal">#ABBCCF</item>
+    <item name="colorControlActivated">#F0C909</item>
+  </style>
+
+</resources>
+ 
+
+ 

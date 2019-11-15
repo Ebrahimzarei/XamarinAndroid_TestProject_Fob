@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:clickable="true"
+	android:background="#ffbdbdbd">
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/top_headerSelectedTwoIceCreame"
+		android:background="#ffbdbdbd"
+		android:descendantFocusability="beforeDescendants"
+		android:focusableInTouchMode="true"
+		android:layout_alignParentTop="true"
+		android:fadeScrollbars="true">
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+			<TextView
+				android:text="بستنی"
+				android:layout_marginTop="15dp"
+				android:background="@mipmap/edit_textview"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:textColor="@color/colorBlack"
+				android:id="@+id/SelectedTwoIceCreame_TxtView_Header"
+				android:gravity="right"
+				android:textSize="25dp"
+				
+				android:layout_marginRight="4dp"
+				android:layout_marginLeft="10dp" 
+				  />
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout
+		android:orientation="horizontal"
+		
+		android:layout_width="match_parent"
+		android:layout_alignParentBottom="true"
+		android:background="#ffbdbdbd"
+		android:id="@+id/bottom_menuuSelectedTwoIceCreame"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+		 >
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_alignParentBottom="true"
+			android:background="@color/colorBlue"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="1dp"
+			android:layout_marginRight="1dp"
+			android:layout_marginBottom="5dp">
+			<Button
+				android:text="حساب"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="@color/colorBlue"
+				android:id="@+id/SelectedTwoIceCreame_Button_Account"
+				android:textColor="@color/colorBlack"
+				android:drawableTop="@mipmap/home32"
+				android:layout_weight="1"
+				android:textSize="17dp"
+				android:paddingTop="7dp"
+				android:layout_marginLeft="7dp"
+				android:layout_marginTop="5dp" />
+			<Button
+				android:text="پیام"
+				android:layout_width="wrap_content"
+				android:background="@color/colorBlue"
+				android:layout_height="match_parent"
+				android:textColor="@color/colorBlack"
+				android:drawableTop="@mipmap/order"
+				android:layout_weight="1"
+				android:paddingTop="7dp"
+				android:textSize="17dp"
+				android:id="@+id/SelectedTwoIceCreame_Button_Message"
+				android:layout_marginTop="5dp" />
+			<ImageButton
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:background="@color/colorkhaki"
+				android:visibility="gone"
+				android:textColor="@color/colorBlack"
+				android:src="@mipmap/menu"
+		  />
+			<Button
+				android:text="سبد"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:drawableTop="@mipmap/promos24"
+				android:background="@color/colorBlue"
+				android:layout_weight="1"
+				android:textColor="@color/colorBlack"
+				android:paddingTop="7dp"
+				android:textSize="17dp"
+				android:id="@+id/SelectedTwoIceCreame_Button_Basket"
+				android:layout_marginTop="5dp" />
+			<Button
+				android:text="خانه"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:background="@color/colorBlue"
+				android:layout_weight="1"
+				android:textSize="17dp"
+				android:paddingTop="7dp"
+				android:drawableTop="@mipmap/accound"
+				android:textColor="@color/colorBlack"
+				android:id="@+id/SelectedTwoIceCreame_Button_Home"
+				android:layout_marginRight="7dp"
+				android:layout_marginTop="5dp" />
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/top_headerSelectedTwoIceCreame"
+		android:layout_above="@id/bottom_menuuSelectedTwoIceCreame"
+		android:id="@+id/sub_content_viewSelectedTwoIceCreame"
+		android:orientation="vertical">
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_centerInParent="true"
+			android:minWidth="25px"
+			android:minHeight="25px"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+		  >
+		</LinearLayout>
+		<Button
+			android:text="بستنی 1"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:layout_marginTop="7dp"
+			android:layout_marginLeft="18dp"
+			android:layout_marginRight="18dp"
+			android:drawableLeft="@mipmap/tick24"
+			android:paddingLeft="15dp"
+			android:id="@+id/SelectedTwoIceCreame_Button_NationalIce"
+			android:background="#ff77a2ec" />
+		<Button
+			android:text="بستنی 2"
+			android:gravity="center"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="#ff77a2ec"
+			android:layout_marginTop="7dp"
+			android:layout_marginLeft="18dp"
+			android:layout_marginRight="18dp"
+			android:drawableLeft="@mipmap/tick24"
+			android:paddingLeft="15dp"
+			android:id="@+id/SelectedTwoIceCreame_Button_ForiegnIce" />
+		 
+	 
+	</LinearLayout>
+     
+</RelativeLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:clickable="true"
+	android:background="#e0e0e0">
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/top_headerSelectedItemResturant"
+		android:background="#e0e0e0"
+		android:descendantFocusability="beforeDescendants"
+		android:focusableInTouchMode="true"
+		android:layout_alignParentTop="true"
+		android:fadeScrollbars="true">
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:minWidth="25px"
+			android:minHeight="25px">
+			<Button
+			android:text="رستوران بهاران"
+				android:textColor="@color/colorBlack"
+			android:layout_marginLeft="15dp"
+				android:layout_marginTop="2dp"
+				android:layout_marginRight="15dp"
+				android:background="@color/colorBlue"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/SelectedItemResturant_Button_NameResturant" />
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_alignParentBottom="true"
+		android:background="#ffbdbdbd"
+		android:id="@+id/bottom_menuuSelectedItemResturant"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+		 >
+		<LinearLayout
+			android:orientation="vertical"
+			android:minWidth="25px"
+			android:minHeight="25px"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			 >
+			<Button
+				android:text="بازگشت"
+				android:textColor="@color/colorBlack"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@color/colorBlue"
+				android:layout_marginBottom="3dp"
+				android:id="@+id/SelectedItemResturant_Button_Back" />
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+	 android:layout_gravity="right"
+		
+		android:layout_below="@id/top_headerSelectedItemResturant"
+		android:layout_above="@id/bottom_menuuSelectedItemResturant"
+		android:id="@+id/sub_content_viewSelectedItemResturant"
+		android:orientation="vertical"
+		android:minWidth="25px"
+		android:minHeight="25px">
+	
+				<android.support.v4.view.ViewPager
+					android:minWidth="25px"
+					android:minHeight="25px"
+					android:layout_width="match_parent"
+					android:layout_height="150dp"
+					android:id="@+id/SelectedItemResturant_ViewPager_ImageResturant" />
+		<android.support.design.widget.TabLayout
+			android:minWidth="15px"
+		
+			android:layout_width="match_parent"
+			 android:layout_height="15dp"
+         android:background="@null"
+        app:tabGravity="center"
+        app:tabIndicatorHeight="0dp"
+        app:tabPaddingStart="7dp"
+        app:tabPaddingEnd="7dp"
+                app:tabBackground="@mipmap/dot_selector"
+			android:id="@+id/SelectedItemResturant_TabLayout_MyTab" />
+					
+				<ListView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/SelectedItemResturant_ListView_ItemResturant" />
+			
+			
+
+
+	</LinearLayout>
+     
+</RelativeLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical"
+    android:layout_width="match_parent"
+	android:background="@color/colordarkkhaki"
+    android:layout_height="match_parent">
+ 
+	<include layout="@layout/basket_toolbar"/>
+
+	<android.support.design.widget.TabLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ff1976d2"
+            android:id="@+id/Basket_TabLayout_MyTab"
+            app:tabGravity="fill"  />
+	<android.support.v4.view.ViewPager
+		android:layout_width="match_parent"
+		android:layout_height="500.0dp"
+		android:layout_weight="1"
+		android:background="@color/colordarkkhaki"
+		android:id="@+id/Basket_ViewPager_MyPager" />
+		<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_alignParentBottom="true"
+		 android:background="@color/colorBlue"
+		android:layout_marginTop="90dp"
+		 
+		android:layout_height="wrap_content">
+		<Button
+			android:text="حساب"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@color/colorBlue"
+			android:id="@+id/Basket_Button_Account"
+			android:textColor="@color/colorBlack"
+			android:drawableTop="@mipmap/home32"
+			android:layout_weight="1"
+			android:textSize="17dp"
+			android:paddingTop="7dp"
+			android:layout_marginLeft="7dp"
+			android:layout_marginTop="5dp" />
+		<Button
+			android:text="پیام"
+			android:layout_width="wrap_content"
+			android:background="@color/colorBlue"
+			android:layout_height="match_parent"
+			android:textColor="@color/colorBlack"
+			android:drawableTop="@mipmap/order"
+			android:layout_weight="1"
+			android:paddingTop="7dp"
+			android:textSize="17dp"
+			android:id="@+id/Basket_Button_Message"
+			android:layout_marginTop="5dp" />
+		<ImageButton
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:background="@color/colorkhaki"
+			android:visibility="gone"
+		 
+			android:textColor="@color/colorBlack"
+			android:src="@mipmap/menu"
+		  />
+		<Button
+			android:text="سبد"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:drawableTop="@mipmap/promos24"
+			android:background="@color/colorBlue"
+			android:layout_weight="1"
+			android:textColor="@color/colorBlack"
+			android:paddingTop="7dp"
+			android:textSize="17dp"
+			android:id="@+id/Basket_Button_MyBasket"
+			android:layout_marginTop="5dp" />
+		<Button
+			android:text="خانه"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:background="@color/colorBlue"
+			android:layout_weight="1"
+			android:textSize="17dp"
+			android:paddingTop="7dp"
+			android:drawableTop="@mipmap/accound"
+			android:textColor="@color/colorBlack"
+			android:id="@+id/Basket_Button_Home"
+			android:layout_marginRight="7dp"
+			android:layout_marginTop="5dp" />
+	</LinearLayout>
+
+
+</LinearLayout>

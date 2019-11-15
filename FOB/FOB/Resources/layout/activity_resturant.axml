@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+	android:clickable="true"
+    android:background="#e0e0e0">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/top_headerResturant"
+	
+        android:background="@color/colorBlue"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        
+        android:layout_alignParentTop="true"
+        android:fadeScrollbars="true">
+		 	<LinearLayout
+			android:orientation="vertical"
+		 
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content" >
+			<TextView
+				android:text="فوب شما"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:textColor="@color/colorWhite"
+				android:id="@+id/Resturant_TxtView_Header"
+				android:textDirection="rtl"
+				android:textSize="18dp"
+				android:layout_marginRight="4dp"
+				android:layoutDirection="rtl" />
+			<LinearLayout
+				android:orientation="horizontal"
+		
+				android:layout_width="match_parent"
+				android:gravity="center"
+				android:weightSum="2"
+				android:layout_height="wrap_content">
+				
+				 
+				<ImageView
+				 
+					android:src="@mipmap/whitesearch32"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="2dp"
+					android:layout_marginLeft="1dp"
+					android:layout_marginRight="130dp"
+					android:scaleType="center"
+					android:layout_column="1"
+					android:layout_weight="1"
+					android:layoutDirection="ltr"
+					android:id="@+id/Resturant_ImageView_Search" />
+
+				<ImageView
+					android:src="@mipmap/trinagle32"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					 android:visibility="gone"
+					android:layoutDirection="ltr"
+					android:layout_column="1"
+					android:layout_weight="1"
+					
+					android:id="@+id/Resturant_ImageView_Triangle" />
+				 
+     
+ />
+			 
+				 		<TextView
+				 
+					android:layout_width="match_parent"
+					android:text="نام شهر,نام منطقه"
+					android:drawableLeft="@mipmap/dropdown24"
+					android:layout_alignParentRight="true"
+					android:layout_column="1"
+					android:layout_weight="1"
+					android:textColor="@color/colorWhite"
+					android:popupBackground="@color/colorWhite"
+					
+					android:layout_height="wrap_content"
+					android:id="@+id/Resturant_TextView_Location"
+					 
+				/>
+			</LinearLayout>
+		</LinearLayout>
+   
+         
+    </LinearLayout>
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_alignParentBottom="true"
+		 android:background="@color/colorBlue"
+		android:layout_marginTop="90dp"
+		android:id="@+id/bottom_menuuResturant"
+		android:layout_height="wrap_content">
+		<Button
+			android:text="حساب"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@color/colorBlue"
+			android:id="@+id/Resturant_Button_Account"
+			android:textColor="@color/colorBlack"
+			android:drawableTop="@mipmap/home32"
+			android:layout_weight="1"
+			android:textSize="17dp"
+			android:paddingTop="7dp"
+			android:layout_marginLeft="7dp"
+			android:layout_marginTop="5dp" />
+		<Button
+			android:text="پیام"
+			android:layout_width="wrap_content"
+			android:background="@color/colorBlue"
+			android:layout_height="match_parent"
+			android:textColor="@color/colorBlack"
+			android:drawableTop="@mipmap/order"
+			android:layout_weight="1"
+			android:paddingTop="7dp"
+			android:textSize="17dp"
+			android:id="@+id/Resturant_Button_Message"
+			android:layout_marginTop="5dp" />
+		<ImageButton
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:background="@color/colorkhaki"
+			android:visibility="gone"
+			android:id="@+id/Resturant_ImageButton_Menu"
+			android:textColor="@color/colorBlack"
+			android:src="@mipmap/menu"
+		  />
+		<Button
+			android:text="سبد"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:drawableTop="@mipmap/promos24"
+			android:background="@color/colorBlue"
+			android:layout_weight="1"
+			android:textColor="@color/colorBlack"
+			android:paddingTop="7dp"
+			android:textSize="17dp"
+			android:id="@+id/Resturant_Button_Basket"
+			android:layout_marginTop="5dp" />
+		<Button
+			android:text="خانه"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:background="@color/colorBlue"
+			android:layout_weight="1"
+			android:textSize="17dp"
+			android:paddingTop="7dp"
+			android:drawableTop="@mipmap/accound"
+			android:textColor="@color/colorBlack"
+			android:id="@+id/Resturant_Button_Home"
+			android:layout_marginRight="7dp"
+			android:layout_marginTop="5dp" />
+	</LinearLayout>
+    <LinearLayout
+       
+      
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+		 
+            android:layout_height="wrap_content"
+            android:layout_below="@id/top_headerResturant"
+            android:layout_above="@id/bottom_menuuResturant"
+            android:id="@+id/sub_content_viewResturant"
+            android:orientation="vertical">
+			
+				  <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+              >
+			 
+            
+			    <ListView
+										android:layout_marginBottom="55dp"
+					android:layout_marginTop="55dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:id="@+id/Resturant_Listview_LstResturant" />
+				 
+				 
+
+			 
+
+            </LinearLayout>
+			
+          
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

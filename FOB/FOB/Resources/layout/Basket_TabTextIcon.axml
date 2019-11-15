@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       >
+	<TextView
+		android:text="Text"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textColor="@color/colorBlack"
+		android:id="@+id/Basket_TextView_TabTextIcon"
+		android:textStyle="normal"
+		  />
+    </RelativeLayout>

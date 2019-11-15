@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="#e0e0e0"
+	android:minWidth="25px"
+	android:minHeight="25px"
+	>
+	<ImageView
+		android:src="@mipmap/chickentwo"
+		android:layout_width="112.0dp"
+		android:layout_marginRight="5dp"
+		android:layout_height="102.0dp"
+		android:maxWidth="112.0dp"
+		android:maxHeight="102.0dp"
+		android:layout_alignParentRight="true"
+		android:id="@+id/CustomFragmentPromose_ImageView_MyImage" />
+	<LinearLayout
+		android:orientation="horizontal"
+	
+		android:layout_marginRight="119dp"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:layout_marginLeft="60dp"
+	
+		  >
+		<LinearLayout
+			android:orientation="horizontal"
+			android:minWidth="25px"
+			android:minHeight="25px"
+			android:layout_width="match_parent"
+			android:weightSum="2"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="3dp"
+		 >
+			<TextView
+				android:text="شرح کالا"
+				android:gravity="right"
+				android:layout_weight="1"
+				android:textColor="@color/colorBlack"
+				android:layout_width="wrap_content"
+				android:id="@+id/CustomFragmentPromose_Textview_Description"
+				android:layout_height="match_parent"
+				android:layout_marginLeft="25dp" 
+				  />
+			<TextView
+				android:text="شرح1"
+				android:gravity="right"
+				android:id="@+id/CustomFragmentPromose_Textview_AnswerDescription"
+				android:textColor="@color/colorBlack"
+				android:layout_weight="1"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+			  />
+		</LinearLayout>
+		
+	
+		 
+		</LinearLayout>
+			<LinearLayout
+				android:orientation="horizontal"
+				android:minWidth="25px"
+				android:minHeight="25px"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+		android:layout_marginTop="30dp"
+		android:layout_marginLeft="60dp"
+		android:layout_marginRight="120dp"
+		android:weightSum="2"
+			  >
+		<TextView
+			android:text="قیمت"
+			android:gravity="right"
+			android:layout_weight="1"
+			android:id="@+id/CustomFragmentPromose_Textview_Price"
+			android:textColor="@color/colorBlack"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_marginLeft="25dp" 
+				  />
+			<TextView
+				android:text="قیمت"
+				android:gravity="right"
+			android:id="@+id/CustomFragmentPromose_Textview_AnswerPrice"
+				android:textColor="@color/colorBlack"
+				android:layout_weight="1"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+			  />
+	
+				</LinearLayout>
+ 
+		<LinearLayout
+			android:orientation="horizontal"
+			android:minWidth="25px"
+		android:weightSum="2"
+			android:minHeight="25px"
+			android:layout_marginLeft="60dp"
+		android:layout_marginRight="120dp"
+			android:layout_width="match_parent"
+		android:layout_marginTop="60dp"
+			android:layout_height="wrap_content"
+			   >
+		<TextView
+			android:text="تخفیف"
+			android:gravity="right"
+			android:layout_weight="1"
+			android:textColor="@color/colorBlack"
+			android:id="@+id/CustomFragmentPromose_Textview_Discount"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_marginLeft="25dp" 
+				  />
+			<TextView
+				android:text="18"
+				android:gravity="right"
+				android:textColor="@color/colorBlack"
+			android:id="@+id/CustomFragmentPromose_Textview_AnswerDiscount"
+				android:layout_weight="1"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+			  />
+		
+
+		</LinearLayout>
+		<LinearLayout
+				android:orientation="vertical"
+				android:minWidth="60dp"
+				android:minHeight="60dp"
+		android:weightSum="3"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				 >
+		<Button
+			android:text="+"
+			android:background="@color/colorBlue"
+			android:id="@+id/CustomFragmentPromose_Button_BtnPluse"
+			android:layout_marginTop="3dp"
+			android:layout_marginLeft="3dp"
+			android:layout_weight="1"
+			android:layout_width="60dp"
+			android:layout_height="42dp"
+			 />
+		<TextView
+			android:text="0"
+			android:gravity="center"
+			android:textColor="@color/colorBlack"
+			android:layout_weight="1"
+			android:layout_height="42dp"
+		    android:layout_width="60dp"
+			
+			
+android:id="@+id/CustomFragmentPromose_TextView_TxtCount" />
+		<Button
+			android:text="-"
+			android:layout_width="60dp"
+			android:layout_marginTop="3dp"
+			android:layout_marginLeft="3dp"
+			android:layout_marginBottom="5dp"
+			android:background="@color/colorBlue"
+			android:layout_weight="1"
+			android:layout_height="42dp"
+			android:id="@+id/CustomFragmentPromose_Button_BtnMinuse" />
+		</LinearLayout>
+</RelativeLayout>
